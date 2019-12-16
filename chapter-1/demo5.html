@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+   <!--<input type="text" v-model="message">{{message}}-->
+
+    <!--<input type="radio" name="sex" value="男" v-model="hong">男-->
+    <!--<input type="radio" name="sex" value="女" v-model="hong">女-->
+    <!--<p> 选中了-->
+        <!--{{-->
+        <!--hong-->
+        <!--}}-->
+    <!--</p>-->
+<select v-model="selected">
+    <option value="" disabled>请选择</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+</select>
+<span>
+    {{selected}}
+</span>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+<script>
+    var vm =new  Vue({
+        el:"#app",
+        data:{
+            selected: ""
+        },
+
+    });
+</script>
+</body>
+</html>
